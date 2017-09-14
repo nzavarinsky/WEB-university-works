@@ -62,15 +62,15 @@ a:focus {
 }
 
 .navbar-brand:before {
-  background:url('http://fla.fg-a.com/flags/european-union-flag-button-1.png');
+  content: url(https://www198.lunapic.com/do-not-link-here-use-hosting-instead/150541615392968?4504429172);
   background-color: #E05416;
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   font-size: 20px;
   line-height: 50px;
   color: #fff;
-  padding: 3px 10px;
+
   z-index: -1;
   border: 3px solid;
   vertical-align: bottom;
@@ -117,10 +117,14 @@ section#contact {
 }
 
 section#about,
-section#contact,
 section#news {
   padding: 150px 0;
   min-height: 100vh;
+}
+
+section#contact {
+  padding: 150px 0;
+  min-height: 50vh;
 }
 
 .navbar-nav>li>.dropdown-menu {

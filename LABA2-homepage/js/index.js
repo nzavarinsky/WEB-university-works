@@ -110,7 +110,6 @@ var app = angular.module('portfolio', [])
 
 })
 
-//portfolio controller
 .controller('newsCtrl', function($scope) {
     $scope.works = [{
       id: 1,
