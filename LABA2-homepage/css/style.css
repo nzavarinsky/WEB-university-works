@@ -62,7 +62,7 @@ a:focus {
 }
 
 .navbar-brand:before {
-  content: url(https://www198.lunapic.com/do-not-link-here-use-hosting-instead/150541615392968?4504429172);
+  content: url();
   background-color: #E05416;
   position: absolute;
   width: 65px;
