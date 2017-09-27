@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Контакти</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'>
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<img class="FB-logo" src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ee-lgflag.gif" height="50px" width="50px" />
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/">Головна</a>
+					</li>
+					<li><a href="#">Новини</a>
+					</li>
+					<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Програма</a>
+							</li>
+							<li><a href="#">Лабораторні</a>
+							</li>
+							<li><a href="#">Література</a>
+							</li>
+						</ul>
+						<li><a href="#">Відгуки</a>
+						</li>
+						<li class="active"><a href="/contact.html">Контакти</a>
+						</li>
+						<li><a href="#">Admin</a>
+						</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home">
+		<div class="jumbotron">
+			<div class="jumbo-container"> <span class="main-title">Contact </span>
+				<span class="main-title">Us</span>
+			</div> <a href="#contact" class="portfolio-button">Let`s go</a>
+		</div>
+	</section>
+	<section id="contact">
+		<h1 class="section-header contact-header">Контакти</h1>
+		<div class="contact-wrapper">
+			<!-- CONTACT LEFT SIDE -->
+			<form class="form-horizontal" role="form" method="post" action="index.php">
+				<div class="container">
+					<div class="form-group">
+						<div class="col-sm-8">
+							<input type="name" class="form-control" id="inputNAME3" placeholder="NAME">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-8">
+							<input type="email" class="form-control" id="inputEMAIL3" placeholder="EMAIL">
+						</div>
+					</div>
+					<textarea class="form-control" rows="8" placeholder="MESSAGE"></textarea>
+					<button class="btn btn-primary send-button" type="submit" value="SEND"><i class="fa fa-paper-plane"></i>
+					</button>
+				</div>
+			</form>
+			<!-- CONTACT RIGHT SIDE -->
+			<div class="direct-contact-container">
+				<ul class="contact-list">
+					<li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">New York, NY</span></i>
+					</li>
+					<li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-863-944-6183" title="Give me a call">(212) 555-5555</a></span></i>
+					</li>
+					<li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">firstlast@gmail.com</a></span></i>
+					</li>
+				</ul>
+				<hr>
+				<ul class="social-media-icons-list">
+					<li>
+						<a href="https://www.linkedin.com/in/frank-bologna-81871911" target="_blank" class="social-media-icon linkedin">
+							<img src="https://cdn3.iconfinder.com/data/icons/social-media-chat-1/512/LinkedIn-256.png" height="60px" width="60px">
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/103485353065394514854" target="_blank" class="social-media-icon googleplus">
+							<img src="https://cdn3.iconfinder.com/data/icons/social-media-chat-1/512/GooglePlus-128.png" height="60px" width="60px">
+						</a>
+					</li>
+					<li>
+						<a href="https://vimeo.com/user39166592" target="_blank" class="social-media-icon vimeo">
+							<img src="https://cdn3.iconfinder.com/data/icons/social-media-chat-1/512/Vimeo-256.png" height="60px" width="60px">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.imdb.com/name/nm3132890/" target="_blank" class="social-media-icon imdb">
+							<img src="https://cdn3.iconfinder.com/data/icons/social-media-chat-1/512/IMDb-256.png" height="60px" width="60px">
+						</a>
+					</li>
+				</ul>
+				<hr>
+			</div>
+		</div>
+	</section>
+	<style>
+		#map {
+		     height: 650px;
+		     width: 100%;
+		    }
+	</style>
+	<section id="work">
+		<h1 class="section-header bio-header">We on map</h1>
+		<div id="map"></div>
+		<script>
+			function initMap() {
+			        var uluru = {lat: -25.363, lng: 131.044};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 4,
+			          center: uluru
+			        });
+			        var marker = new google.maps.Marker({
+			          position: uluru,
+			          map: map
+			        });
+			      }
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdhyT25O2IePDASXF6ue66EzEvToOWN1E&callback=initMap">
+		</script>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="footer-box">
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a>
+							</li>
+						</ul>
+						<div class="copyright">Copyright © 2017. All rights reserved.</div>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</footer>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='http://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	<script src='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js'></script>
+	<script src="js/contact.js"></script>
+</body>
+
+</html>

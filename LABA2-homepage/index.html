@@ -3,194 +3,156 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lab 2</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/style.css">
+    <script> var title = "Порівняльне цивільне судочинство з правом Європейського Союзу";
+            var c = 0;
+            function writetitle() {
+            document.title = title.substr(c, 20);
+            c++;
+            if (c >= title.length) {
+            c = 0;
+            }
+            }
+            writetitle();
+            setInterval("writetitle()", 100);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <div ng-app="portfolio">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="nav-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--end navbar-toggle -->
-                    <a class="navbar-brand" href="#"></a>
-                </div>
-                <!--end nav header-->
-                <div class="collapse navbar-collapse pull-right " id="navi">
-                    <ul class="nav navbar-nav" ng-controller="navCtrl">
-                        <li class="active"><a href="#">Головна</a></li>
-                        <li><a href="#">Новини</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Програма</a></li>
-                                <li><a href="#">Лабораторні</a></li>
-                                <li><a href="#">Література</a></li>
-                            </ul>
-                            <li><a href="#">Відгуки</a></li>
-                            <li><a href="#">Контакти</a></li>
-                            <li><a href="#">Admin</a></li>
-                        </li>
-
-                    </ul>
-                    </li>
-
-                    <!--end ul-->
-                </div>
-                <!--end collapse navbar-collapse-->
-            </div>
-            <!--end container-fluid-->
-        </nav>
-        <!--end nav-->
-        <section id="home" ng-controller="homeCtrl as home">
-            <header>
-                <div class="container">
-                    <div class="header-content text-center">
-                        <div class="header-content-inner">
-                            <h1>{{title}}</h1>
-                            <hr>
-                            <p>{{description}}
-                                <p>
-                        </div>
-                    </div>
-                    <!--<div class="seemore"></a><i class="indicator glyphicon glyphicon-chevron-down"></i></a></div>-->
-                </div>
-            </header>
-        </section>
-        <!--end header section-->
-        <section id="about" ng-controller="aboutCtrl as about">
-            <div class="container">
-                <div class="header-content text-center">
-                    <div class="header-content-inner">
-                        <h1>{{aboutText.title}}</h1>
-                        <hr>
-                        <p class="lead">{{aboutText.copyText1}}</p>
-                        <br>
-                        <p class="lead">{{aboutText.copyText2}}</p>
-                        <br>
-                        <p class="lead">{{aboutText.copyText3}}</p>
-                        <br>
-                        <p class="lead">{{aboutText.copyText4}}</p>
-                        <br>
-                        <p class="lead">{{aboutText.copyText5}}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--end about section-->
-        <section id="news" ng-controller="newsCtrl">
-            <div class="header-content text-center">
-                <div class="header-content-inner">
-                    <h1>{{newsect.title}}</h1>
-                    <hr>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="item in works">
-                                <div href="{{item.url}}" class="thumbnail">
-                                    <img ng-src="{{item.thumbnail}}" alt="{{item.title}}">
-                                    <div class="caption">
-                                        <div class="date"><span class="day">17</span><span class="month">Nov</span></div>
-                                        <h3 class="title">{{item.title}}</h3>
-                                        <p>{{item.caption}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </section>
-        <!--end news section-->
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Залиште повідомлення</h2>
-                    </div>
-                </div>
-                <!--end second row-->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form name="sentMessage" id="contactForm" novalidate="">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Ім`я" id="name" required="" data-validation-required-message="Введіть ваше ім'я." aria-invalid="false">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <!--end form-group-->
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="E-mail *" id="email" required="" data-validation-required-message="Введіть ваш емейл.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <!--end form-group-->
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Телефон *" id="phone" required="" data-validation-required-message="Введіть ваш номер мобільного телефону.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <!--end form-group-->
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Повідомлення *" id="message" required="" data-validation-required-message="Введіть повідомлення." aria-invalid="false"></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button type="submit" class="btn btn-xl">Надіслати повідомлення</button>
-                                </div>
-                            </div>
-                            <!--end row-->
-                        </form>
-                        <!--end form-->
-                    </div>
-                </div>
-                <!--end first row-->
-            </div>
-            <!--end container -->
-        </section>
-        <!--end contact section-->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <span class="copyright">Copyright &copy; 2017</span>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/nazarzavarynskyi" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://github.com/nzavarynskyi"><i class="fa fa-github" target="_blank"></i></a></li>
-                            <li><a href="https://instagram.com/"><i class="fa fa-instagram" target="_blank"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline quicklinks">
-                            <li><a href="#">Privacy Policy</a>
-                            </li>
-                            <li><a href="#">Terms of Use</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--end row -->
-            </div>
-            <!--end form container-->
-        </footer>
-        <!--end footer-->
-        </div>
-        <!--end ng-app-->
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-        <script src="js/index.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#home">
+					<div class="FB-logo-wrapper">
+						<img class="FB-logo" src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ee-lgflag.gif" height="50px" width="50px" />
+					</div>
+				</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Головна</a>
+					</li>
+					<li><a href="#">Новини</a>
+					</li>
+					<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Програма</a>
+							</li>
+							<li><a href="#">Лабораторні</a>
+							</li>
+							<li><a href="#">Література</a>
+							</li>
+						</ul>
+						<li><a href="#">Відгуки</a>
+						</li>
+						<li><a href="/contact.html">Контакти</a>
+						</li>
+						<li><a href="#">Admin</a>
+						</li>
+					</li>
+				</ul>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home">
+		<div class="jumbotron">
+			<div class="jumbo-container"> <span class="main-title">Порівняльне цивільне судочинство з правом Європейського Союзу</span>
+			</div> <a href="#bio" class="portfolio-button">Читати про нас</a>
+		</div>
+	</section>
+	<section id="bio">
+		<div class="container">
+			<div class="bio-text">
+				<h1 class="section-header bio-header">About Us</h1>
+				<img class="bio-photo" src="https://lh3.googleusercontent.com/-ww0v0BbwPUU/VTe2pNMSRsI/AAAAAAAAAFc/dDUUYuZ4Aso/s426/profile%2Bpicture.jpg" />
+				<p><strong>Мета:</strong> засвоєння студентами правових норм, теоретичних і практичних знань та вмінь з порівняльного аналізу цивільної процесуальної форми відкриття, розгляду, вирішення та перегляду цивільних справ за процесуальним законодавством України та держав ЄС, на прикладі ФРН, Англії та Франції, ознайомлення з інститутом судового доказування, основними учасниками цивільного процесу. Предмет: цивільне судочинство України та кріаїн Європейського Союзу, зокрема ФРН, Англії та Франції.
+					<br> <strong>Зміст:</strong> Cудові системи України та держав ЄС (ФРН, Франція, Англія). Цивільне процесуальне право України та держав ЄС. Учасники цивільного процесу. Порівняльна характеристика. Судові докази. Відкриття провадження у цивільних справах. Порівняльна характеристика. Попередній судовий розгляд. Судовий розгляд цивільних справ. Судові рішення. Перегляд судових рішень Місце у навчальному процесі – обов’язкова, 1 семестр. У результаті вивчення дисципліни «Порівняльне цивільне судочинство з правом Європейського Союзу» здобувач вищої освіти повинен:
+					<br> <strong>- знати:</strong>
+					- судові системи України та держав ЄС (ФРН, Англії, Франції);
+					<br>- джерела цивільного процесуального законодавства України та держав ЄС щодо відкриття, розгляду, вирішення та перегляду цивільних справ; судового доказування, основних учасників цивільного процесу;
+					<br>- порівняльну характеристику окремих визначених інститутів процесуального права;
+					<br>- питання судової практики щодо тлумачення і застосування законодавства.
+					<br> <strong> -вміти: </strong> - порівнювати та аналізувати процесуальні норми і формулювати власну позицію;
+					<br>- застосовувати правові норми для вирішення конкретних практичних ситуацій (казусів), узагальнювати матеріали судової практики, виявляти прогалини правового регулювання і подавати пропозиції щодо вдосконалення процесуального законодавства.
+					<br>Декан проф. Бурдін</p>
+			</div>
+		</div>
+	</section>
+	<div class="client-break break-section">
+		<h1 class="section-news ">Latest news</h1>
+		<ul class="news">
+			<li class="news">
+				<div class="carousel-photo">
+					<img src="http://i67.tinypic.com/33m0w81.jpg" alt="">
+					<div class="caption-spacing">
+						<p><a class="crl-title" href="/page/news-detail-page?pk=737440">Headline Text for News</a>
+						</p>
+						<time class="date">10/25/2016</time>
+						<div class="short-caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium sem.</div>
+			</li>
+			<li>
+				<div class="carousel-photo">
+					<img src="http://i67.tinypic.com/33m0w81.jpg" alt="">
+					<div class="caption-spacing"> <a class="crl-title" href="/page/news-detail-page?pk=737440">Headline Text for News</a>
+						<time class="date">10/25/2016</time>
+						<div class="short-caption">ESTESTESTESTEST</div>
+			</li>
+			<li>
+				<div class="carousel-photo">
+					<img src="http://i67.tinypic.com/33m0w81.jpg" alt="">
+					<div class="caption-spacing">
+						<p><a class="crl-title" href="/page/news-detail-page?pk=737440">Headline Text for News</a>
+						</p>
+						<time class="date">10/25/2016</time>
+						<div class="short-caption">TESTESTESTESTEST</div>
+			</li>
+			</div>
+			</div>
+		</ul>
+		</div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='http://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+		<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+		<script src='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js'></script>
+		<script src="js/index.js"></script>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<div class="footer-box">
+							<ul class="social">
+								<li><a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a>
+								</li>
+								<li><a href="#"><i class="fa fa-youtube"></i></a>
+								</li>
+							</ul>
+							<div class="copyright">Copyright © 2017. All rights reserved.</div>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</footer>
 </body>
+
 </html>
