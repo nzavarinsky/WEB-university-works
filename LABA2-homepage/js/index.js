@@ -15,7 +15,6 @@ $(function() {
   });
 
   
-  //TV SET CHANNEL FLIP
   $(function(){
       $('.fadein img:gt(0)').hide();
       setInterval(function(){
@@ -24,14 +23,6 @@ $(function() {
            .end().appendTo('.fadein');}, 
         1500);
   });
-  
-  
-  // NAV BAR CLOSE ON PAGE CLICK
-  $(document).ready(function () {
-      $(".navbar-nav li a").click(function(event) {
-          $(".navbar-collapse").collapse('hide');
-      });
-  })
   
   
   //Fade header on scroll

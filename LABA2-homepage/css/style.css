@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
 }
-#work,
 #bio,
 #about {
   padding-bottom: 50px;
@@ -207,165 +206,6 @@ HOME MEDIA QUERIES
       font-size: 10px;
   }
 }
-/**********************
-
-WORK SECTION
-
-**********************/
-
-.grid {
-  position: relative;
-  margin: 0 auto;
-  padding: 1em 0 4em;
-  max-width: 1000px;
-  list-style: none;
-  text-align: center;
-  font-family: Raleway;
-}
-/* Common style */
-
-.grid figure {
-  position: relative;
-  /****************
-float: left;
-****************/
-  
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 360px;
-  width: 48%;
-  background: #000;
-  text-align: center;
-  cursor: pointer;
-}
-.grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
-}
-.grid figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
-}
-.grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* Anchor will cover the whole item by default */
-
-.grid figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-}
-.grid figure h2 span {
-  font-weight: 800;
-}
-.grid figure h2,
-.grid figure p {
-  margin: 0;
-}
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-/* Individual effects */
-/*---------------*/
-/***** Sarah *****/
-/*---------------*/
-
-figure.effect-sarah {
-  background: #000;
-}
-figure.effect-sarah img {
-  max-width: none;
-  width: -webkit-calc(100% + 20px);
-  width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px, 0, 0);
-  transform: translate3d(-10px, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-figure.effect-sarah:hover img {
-  opacity: 0.4;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-figure.effect-sarah figcaption {
-  text-align: left;
-}
-figure.effect-sarah h2 {
-  position: relative;
-  overflow: hidden;
-  padding: 0.5em 0;
-}
-figure.effect-sarah h2::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-}
-figure.effect-sarah:hover h2::after {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-figure.effect-sarah p {
-  padding: 1em 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
-figure.effect-sarah:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-@media screen and (max-width: 50em) {
-  .grid figure {
-      display: inline-block;
-      float: none;
-      margin: 10px auto;
-      width: 100%;
-  }
-}
-.clearfix {
-  clear: both;
-  padding-bottom: 100px;
-}
 /**************************
 
 BIO SECTION
@@ -379,19 +219,7 @@ BIO SECTION
   background-position: center;
   overflow: hidden;
   /*  
-
-ASTORIA IMAGES:
-https://upload.wikimedia.org/wikipedia/commons/3/32/Astoria_Park_Panorama_of_Triborough_and_Hell\'s_Gate_Bridges.jpg
-
-https://farm4.staticflickr.com/3172/2566635174_1244623644_o.jpg
-
-OTHER IMAGE: 
-
-https://images.unsplash.com/photo-1455461491901-a0990c10d84c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=125f3ba507f9f117da589ff634f95a03
-
-ORIGINAL IMAGE:
-https://unsplash.imgix.net/45/HWijjF7RwOPGEJ1nb4Zb_IMG_3773.jpg?q=75&fm=jpg&s=38ebbe5922dfb2114877fe9170478b2f 
-
+ABOUT
 */
 }
 .bio-photo {
@@ -513,268 +341,49 @@ CLIENTS SECTION
   background-position: center;
   overflow: hidden;
 }
-/***********************
-
-ORIGINAL IMAGE:
-https://download.unsplash.com/30/ny-filtered.jpg
-
-OTHER: 
-https://graphics8.nytimes.com/images/2012/12/20/travel/20frugal-lead/20frugal-lead-blog480.jpg
-
-FRANK STUDIO:
-https://scontent.xx.fbcdn.net/v/t1.0-9/11020252_1611776072434602_5281697854766324263_n.jpg?oh=d398210c37a1ec2f269094dc42f99cc3&oe=57E3466F
-
-************************/
 /********************
 
-CONTACT SECTION
+NEWS SECTION
 
 ********************/
 
-#contact {
-  width: 100%;
-  height: 650px;
-  background-color: #222;
-  overflow: hidden;
+#custom_carousel .item {
+  padding-top: 150px;
+  height: 400px;
+  color: #000;
+  background-color: #eee;
+  padding: 2px 0;
 }
-.contact-header {
-  color: #eee;
-  padding-top: 50px;
-}
-.contact-wrapper {
-  margin: 0 auto;
-  padding-top: 5px;
+#custom_carousel .controls {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
   position: relative;
-  max-width: 800px;
+  background: #ddd
 }
-/********************* 
-LEFT CONTACT PAGE
-*********************/
-
-.form-horizontal {
-  float: left;
-  max-width: 400px;
+#custom_carousel .controls li {
+  display: table-cell;
+  width: 1%;
+  max-width: 90px
 }
-.form-control,
-textarea {
-  max-width: 400px;
-  background-color: #222;
-  color: #fff;
+#custom_carousel .controls li.active {
+  background-color: #eee;
+  border-top: 3px solid orange;
 }
-.form-horizontal .form-group .form-control,
-.form-horizontal .form-control {
-  background-color: #222;
-}
-.send-button {
-  margin-top: 15px;
-  width: 400px;
-}
-/********************** 
-RIGHT CONTACT PAGE 
-**********************/
-
-.direct-contact-container {
-  max-width: 400px;
-  float: right;
+#custom_carousel .controls a small {
+  overflow: hidden;
+  display: block;
+  font-size: 10px;
   margin-top: 5px;
-}
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-.list-item {
-  line-height: 4;
-  color: #aaa;
-}
-.contact-text {
-  font: 300 20px 'Raleway', sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
-}
-.place {
-  margin-left: 62px;
-}
-.phone {
-  margin-left: 56px;
-}
-.gmail {
-  margin-left: 53px;
-}
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-}
-.contact-text a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.social-media-icons-list {
-  text-align: center;
-  margin-left: -50px;
-}
-.social-media-icons-list li {
-  display: inline-block;
-  margin: -5px 5px;
-  filter: grayscale(30%);
-  -webkit-filter: grayscale (30%);
-}
-.social-media-icon img {
-  -webkit-transition: all .1s ease-in-out;
-  -moz-transition: all .1s ease-in-out;
-  -ms-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
-}
-.social-media-icon img:hover {
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.copyright {
-  font: 100 15px 'Lato', sans-serif;
-  color: #bbb;
-  letter-spacing: 1px;
-  text-align: center;
+  font-weight: bold
 }
 /**************************** 
-CONTACT SECTION MEDIA QUERIES
+FOOTER
 ****************************/
 
-@media screen and (max-width: 760px) {
-  #contact {
-      height: 980px;
-  }
-  .section-header {
-      font-size: 65px;
-  }
-  .direct-contact-container,
-  .form-horizontal {
-      float: none;
-      margin: 0 auto;
-  }
-  .name,
-  .email,
-  textarea,
-  button {
-      max-width: 370px;
-  }
-  .direct-contact-container {
-      margin-top: 60px;
-      max-width: 300px;
-  }
-}
-@media screen and (max-width: 568px) {
-  #contact {
-      height: 1200px;
-  }
-  .direct-contact-container,
-  .form-wrapper {
-      float: none;
-      margin: 0 auto;
-  }
-  .name,
-  .email,
-  textarea {
-      max-width: 280px;
-  }
-  .direct-contact-container {
-      margin-top: 60px;
-      max-width: 280px;
-  }
-  .contact-text {
-      font-size: 1;
-  }
-  .copyright {
-      font-size: 16px;
-  }
-  .social-media-icons-list li {
-      margin: 5px 0px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .send-button {
-      width: 99%;
-  }
-}
-.news ul {
-  list-style-type: none;
-}
-.news li {
-  padding-left: 100px;
-  float: left;
-}
-.carousel-photo {
-  height: 270px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 25px;
-  position: relative;
-}
-.carousel-photo:hover .caption-spacing {
-  height: 70%;
-}
-.caption-spacing {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(80, 185, 77, .75);
-  overflow: hidden;
-  width: 100%;
-  height: 0%;
-  transition: .5s ease;
-}
-.crl-title {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 15px;
-  padding-top: 20px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-a:link {
-  color: #ffffff;
-  text-decoration: none;
-}
-a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-.date {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: normal;
-  color: #ffffff;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.short-caption {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: normal;
-  color: #ffffff;
-  line-height: 17px;
-  padding-top: 7px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-}
 footer.footer {
   text-align: center;
   color: #9da1a6;
