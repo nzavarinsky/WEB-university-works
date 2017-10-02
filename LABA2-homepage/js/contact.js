@@ -72,7 +72,6 @@ $(document).ready(function() {
 });
 });
 
-
 window.sr = ScrollReveal();
 sr.reveal('.section-header');
 sr.reveal('.effect-sarah');
