@@ -34,6 +34,10 @@ body {
 .navbar li:hover {
     background-color: #111;
 }
+
+.navbar a:hover {
+    font-size: 25px;
+}
 #home {
     background: url('https://images.unsplash.com/photo-1420330076511-19dcae7171ac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e2c8757bf75fcfdd8bbd23e17a257f28') no-repeat;
     background-attachment: fixed;
@@ -503,7 +507,7 @@ footer.footer ul.social li a:hover {
     border-color: #f74949;
 }
 footer.footer .copyright {
-    color: #515151;
+    color: #FFFFFF;
 }
 .logo {
     width: 300px;
