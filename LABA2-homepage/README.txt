@@ -1,1 +1,1 @@
-WebSite for the university
+WebSite
