@@ -2,214 +2,223 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<script>
-		var title = "Порівняльне цивільне судочинство з правом Європейського Союзу";
-		var c = 0;
-		function writetitle() {
-			document.title = title.substr(c, 20);
-			c++;
-			if (c >= title.length) {
-				c = 0;
-			}
-		}
-		writetitle();
-		setInterval("writetitle()", 100);
-	</script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-	<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <script>
+        var title = "Порівняльне цивільне судочинство з правом Європейського Союзу";
+        var c = 0;
+
+        function writetitle() {
+            document.title = title.substr(c, 20);
+            c++;
+            if (c >= title.length) {
+                c = 0;
+            }
+        }
+        writetitle();
+        setInterval("writetitle()", 100);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#home">
-					<div class="FB-logo-wrapper">
-						<img class="FB-logo" src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ee-lgflag.gif"
-						 height="50px" width="50px" />
-					</div>
-				</a>
-				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#home">
+                    <div class="FB-logo-wrapper">
+                        <img class="FB-logo" src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ee-lgflag.gif" height="50px" width="50px" />
+                    </div>
+                </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			</div>
-			<div class="collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Головна</a>
-					</li>
-					<li><a href="/news.html">Новини</a>
-					</li>
-					<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="/curriculum.html">Програма</a>
-							</li>
-							<li><a href="#">Лабораторні</a>
-							</li>
-							<li><a href="#">Література</a>
-							</li>
-						</ul>
-						<li><a href="/feedback.html">Відгуки</a>
-						</li>
-						<li><a href="/contact.html">Контакти</a>
-						</li>
-						<li><a href="#">Admin</a>
-						</li>
-					</li>
-				</ul>
-				</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section id="home">
-		<div class="jumbotron">
-			<div class="jumbo-container"> <span class="main-title">Порівняльне цивільне судочинство з правом Європейського Союзу</span>
-			</div> <a href="#bio" class="portfolio-button">Читати про нас</a>
-		</div>
-	</section>
-	<section id="bio">
-		<div class="container">
-			<div class="bio-text">
-				<h1 class="section-header bio-header">About Us</h1>
-				<img class="bio-photo" src="https://lh3.googleusercontent.com/-ww0v0BbwPUU/VTe2pNMSRsI/AAAAAAAAAFc/dDUUYuZ4Aso/s426/profile%2Bpicture.jpg"
-				/>
-				<p><strong>Мета:</strong> засвоєння студентами правових норм, теоретичних і практичних знань та вмінь з порівняльного аналізу
-					цивільної процесуальної форми відкриття, розгляду, вирішення та перегляду цивільних справ за процесуальним законодавством
-					України та держав ЄС, на прикладі ФРН, Англії та Франції, ознайомлення з інститутом судового доказування, основними
-					учасниками цивільного процесу. Предмет: цивільне судочинство України та кріаїн Європейського Союзу, зокрема ФРН, Англії
-					та Франції.
-					<br> <strong>Зміст:</strong> Cудові системи України та держав ЄС (ФРН, Франція, Англія). Цивільне процесуальне право
-					України та держав ЄС. Учасники цивільного процесу. Порівняльна характеристика. Судові докази. Відкриття провадження
-					у цивільних справах. Порівняльна характеристика. Попередній судовий розгляд. Судовий розгляд цивільних справ. Судові
-					рішення. Перегляд судових рішень Місце у навчальному процесі – обов’язкова, 1 семестр. У результаті вивчення дисципліни
-					«Порівняльне цивільне судочинство з правом Європейського Союзу» здобувач вищої освіти повинен:
-					<br> <strong>- знати:</strong> - судові системи України та держав ЄС (ФРН, Англії, Франції);
-					<br>- джерела цивільного процесуального законодавства України та держав ЄС щодо відкриття, розгляду, вирішення та перегляду
-					цивільних справ; судового доказування, основних учасників цивільного процесу;
-					<br>- порівняльну характеристику окремих визначених інститутів процесуального права;
-					<br>- питання судової практики щодо тлумачення і застосування законодавства.
-					<br> <strong> -вміти: </strong> - порівнювати та аналізувати процесуальні норми і формулювати власну позицію;
-					<br>- застосовувати правові норми для вирішення конкретних практичних ситуацій (казусів), узагальнювати матеріали судової
-					практики, виявляти прогалини правового регулювання і подавати пропозиції щодо вдосконалення процесуального законодавства.
-					<br>Декан проф. Бурдін</p>
-			</div>
-		</div>
-	</section>
-	<div class="client-break break-section">
-		<div class="container-fluid">
-			<div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
-				<div class="carousel-inner">
-					<div class="item active">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-								<div class="col-md-9">
-									<h2>Slide 1</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-								<div class="col-md-9">
-									<h2>Slide 2</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-								<div class="col-md-9">
-									<h2>Slide 4</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-								<div class="col-md-9">
-									<h2>Slide 3</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates
-										ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="controls">
-					<ul class="nav">
-						<li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-						<li data-target="#custom_carousel" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-						<li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-						<li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Головна</a>
+                    </li>
+                    <li><a href="/news.html">Новини</a>
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/curriculum.html">Програма</a>
+                            </li>
+                            <li><a href="#">Лабораторні</a>
+                            </li>
+                            <li><a href="#">Література</a>
+                            </li>
+                        </ul>
+                        <li><a href="/feedback.html">Відгуки</a>
+                        </li>
+                        <li><a href="/contact.html">Контакти</a>
+                        </li>
+                        <li><a href="/admin.html">Admin</a>
+                        </li>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="jumbotron">
+            <div class="jumbo-container"> <span class="main-title">Порівняльне цивільне судочинство з правом Європейського Союзу</span>
+            </div> <a href="#bio" class="portfolio-button">Читати про нас</a>
+        </div>
+    </section>
+    <section id="bio">
+        <div class="container">
+            <div class="bio-text">
+                <h1 class="section-header bio-header">About Us</h1>
+                <img class="bio-photo" src="https://lh3.googleusercontent.com/-ww0v0BbwPUU/VTe2pNMSRsI/AAAAAAAAAFc/dDUUYuZ4Aso/s426/profile%2Bpicture.jpg" />
+                <p><strong>Мета:</strong> засвоєння студентами правових норм, теоретичних і практичних знань та вмінь з порівняльного аналізу цивільної процесуальної форми відкриття, розгляду, вирішення та перегляду цивільних справ за процесуальним законодавством
+                    України та держав ЄС, на прикладі ФРН, Англії та Франції, ознайомлення з інститутом судового доказування, основними учасниками цивільного процесу. Предмет: цивільне судочинство України та кріаїн Європейського Союзу, зокрема ФРН, Англії
+                    та Франції.
+                    <br> <strong>Зміст:</strong> Cудові системи України та держав ЄС (ФРН, Франція, Англія). Цивільне процесуальне право України та держав ЄС. Учасники цивільного процесу. Порівняльна характеристика. Судові докази. Відкриття провадження
+                    у цивільних справах. Порівняльна характеристика. Попередній судовий розгляд. Судовий розгляд цивільних справ. Судові рішення. Перегляд судових рішень Місце у навчальному процесі – обов’язкова, 1 семестр. У результаті вивчення дисципліни
+                    «Порівняльне цивільне судочинство з правом Європейського Союзу» здобувач вищої освіти повинен:
+                    <br> <strong>- знати:</strong> - судові системи України та держав ЄС (ФРН, Англії, Франції);
+                    <br>- джерела цивільного процесуального законодавства України та держав ЄС щодо відкриття, розгляду, вирішення та перегляду цивільних справ; судового доказування, основних учасників цивільного процесу;
+                    <br>- порівняльну характеристику окремих визначених інститутів процесуального права;
+                    <br>- питання судової практики щодо тлумачення і застосування законодавства.
+                    <br> <strong> -вміти: </strong> - порівнювати та аналізувати процесуальні норми і формулювати власну позицію;
+                    <br>- застосовувати правові норми для вирішення конкретних практичних ситуацій (казусів), узагальнювати матеріали судової практики, виявляти прогалини правового регулювання і подавати пропозиції щодо вдосконалення процесуального законодавства.
+                    <br>Декан проф. Бурдін</p>
+            </div>
+        </div>
+    </section>
+    <div class="client-break break-section">
+        <div class="container-fluid">
+            <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 1</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 2</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 4</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                <div class="col-md-9">
+                                    <h2>Slide 3</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
+                                        soluta.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <ul class="nav">
+                        <li data-target="#custom_carousel" data-slide-to="0" class="active">
+                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="1">
+                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="2">
+                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="3">
+                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='http://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
-	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-	<script src='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js'></script>
-	<script src="js/index.js"></script>
-	<script src="js/news.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script src='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/news.js"></script>
 
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<div class="footer-box">
-						<ul class="social">
-							<li><a href="#"><i class="fa fa-twitter"></i></a>
-							</li>
-							<li><a href="#"><i class="fa fa-facebook"></i></a>
-							</li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-							</li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a>
-							</li>
-							<li><a href="#"><i class="fa fa-youtube"></i></a>
-							</li>
-						</ul>
-						<div class="copyright">Copyright © 2017. All rights reserved.</div>
-					</div>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
-		</div>
-	</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="footer-box">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                        <div class="copyright">Copyright © 2017. All rights reserved.</div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
