@@ -48,7 +48,7 @@
                         </li>
                         <li><a href="/contact.html">Контакти</a>
                         </li>
-                        <li><a href="#">Admin</a>
+                        <li><a href="/admin.html">Admin</a>
                         </li>
                     </li>
                 </ul>
@@ -57,98 +57,104 @@
             </div>
         </div>
     </nav>
-    <h1 class="section-header">News</h1>
-    <div class="client-break break-section">
 
-        <div class="container-fluid">
-            <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 1</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
+    <body ng-app="plunker">
+        <div ng-controller="SecondCtrl">
+            <h1 class="section-header">News</h1>
+            <div class="container-fluid">
+                <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                    <div class="col-md-9">
+                                        <p>{{ sharedData }}</p>
+                                        <p>{{ sharedData1 }}</p>
+                                        <p></p>
+                                        <p>{{ sharedData1 }}.
+                                        </p>
+                                        <p> {{ sharedData2 }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                    <div class="col-md-9">
+                                        <p>{{ sharedData }}</p>
+                                        <p>{{ sharedData1 }}</p>
+                                        <p></p>
+                                        <p>{{ sharedData1 }}.
+                                        </p>
+                                        <p> {{ sharedData2 }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                    <div class="col-md-9">
+                                        <p>{{ sharedData }}</p>
+                                        <p>{{ sharedData1 }}</p>
+                                        <p></p>
+                                        <p>{{ sharedData1 }}.
+                                        </p>
+                                        <p> {{ sharedData2 }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                                    <div class="col-md-9">
+                                        <p>{{ sharedData }}</p>
+                                        <p>{{ sharedData1 }}</p>
+                                        <p></p>
+                                        <p>{{ sharedData1 }}.
+                                        </p>
+                                        <p> {{ sharedData2 }} </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 2</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="controls">
+                        <ul class="nav">
+                            <li data-target="#custom_carousel" data-slide-to="0" class="active">
+                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData }}</small></a>
+                            </li>
+                            <li data-target="#custom_carousel" data-slide-to="1">
+                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData }}</small></a>
+                            </li>
+                            <li data-target="#custom_carousel" data-slide-to="2">
+                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData }}</small></a>
+                            </li>
+                            <li data-target="#custom_carousel" data-slide-to="3">
+                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData }}</small></a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="item">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 4</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                <div class="col-md-9">
-                                    <h2>Slide 3</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur
-                                        soluta.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="controls">
-                    <ul class="nav">
-                        <li data-target="#custom_carousel" data-slide-to="0" class="active">
-                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a>
-                        </li>
-                        <li data-target="#custom_carousel" data-slide-to="1">
-                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a>
-                        </li>
-                        <li data-target="#custom_carousel" data-slide-to="2">
-                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a>
-                        </li>
-                        <li data-target="#custom_carousel" data-slide-to="3">
-                            <a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </div>
 
 
+
+
+        </div>
+
+    </body>
+
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+    <script src="js/test.js"></script>
     <script src='js/jquery.min.js'></script>
     <script src='js/scroolreveal.js'></script>
     <script src='js/bootstrap.min.js'></script>

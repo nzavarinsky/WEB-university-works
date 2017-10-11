@@ -91,172 +91,46 @@
 
     <h1 class="section-header">Add news</h1>
 
-    <div class="container">
-        <div class="wizard" id="myWizard">
-            <section>
-                <h4 class="page-title text-center">Create Associate</h4>
-            </section>
+    <body ng-app="plunker">
 
-            <div class="wizard__progress">
-                <ul class="wizard__labels nav nav-tabs">
-                    <li style="width:25%;" class="col-xs-12 active">
-                        <a href="#create-assignment" data-toggle="tab" data-step="1">
-                            <i class="fa fa-folder-open wizard__icon"></i> Додати заголовок
-                        </a>
-                    </li>
 
-                    <li style="width:25%;" class="col-xs-12">
-                        <a href="#associate-info" data-toggle="tab" data-step="2">
-                            <i class="fa fa-user wizard__icon"></i> Додати короткий опис
-                        </a>
-                    </li>
 
-                    <li style="width:25%;" class="col-xs-12">
-                        <a href="#working-conditions" data-toggle="tab" data-step="3">
-                            <i class="fa fa-file-text-o wizard__icon"></i> Додати довгий опис і зображення
-                        </a>
-                    </li>
+        <div class="comments-app" ng-app="plunker" ng-controller="MainCtrl">
 
-                    <li style="width:25%;" class="col-xs-12" id="lastli">
-                        <a href="#validate" data-toggle="tab" data-step="4">
-                            <i class="fa fa-check wizard__icon"></i> Готово!
-                        </a>
-                    </li>
-                </ul>
+            <!-- From -->
 
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 25%;"></div>
-                </div>
+            <!-- Comment Avatar -->
+            <div class="comment-avatar">
+                <img src="http://lorempixel.com/200/200/people">
             </div>
 
-            <div class="tab-content">
-                <div class="tab-pane fade in active" id="create-assignment">
-                    <section>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label class="control-label" for="name--first">
-                                        Заголовок
-
-                                        <span class="required">*</span>
-                                    </label>
-
-                                    <textarea class="form-control" rows="5" id="name__first"></textarea>
-                                </div>
-                            </div>
-
-                            <!-- / end col -->
-                        </div>
-                    </section>
-
-                    <section class="text-right">
-                        <button type="button" class="btn btn-primary btn-sm next">Продовжити</button>
-                    </section>
+            <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
+                <div class="form-row">
+                    <input ng-model="myValue" />
                 </div>
 
-                <div class="tab-pane fade" id="associate-info">
-                    <section>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <!-- ================= address ================= -->
 
-                                <div class="form-group">
-                                    <label class="control-label" for="nid">Короткий опис</label>
+                <textarea ng-model="myValue2"></textarea>
 
-                                    <textarea class="form-control input-sm" rows="5" id="nid"></textarea>
-                                </div>
-                            </div>
-
-                            <!-- / end col -->
-                        </div>
-
-                        <!-- / end row -->
-                    </section>
-
-                    <section class="text-right">
-                        <button type="button" class="btn btn-primary btn-sm" id="submit-id-button">Підтвердити</button>
-
-                        <button type="button" class="btn btn-default btn-sm next" disabled="disabled" id="enter-id-button">Продовжити</button>
-                    </section>
+                <div class="form-row">
+                    <input ng-model="myValue2" />
                 </div>
 
-                <div class="tab-pane fade" id="working-conditions">
-                    <section>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label class="control-label" for="start-date">Довгий опис новини</label>
-
-                                    <textarea class="form-control" rows="7" id="start-date"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                                        <!-- image-preview-filename input [CUT FROM HERE] -->
-
-                                        <div class="input-group image-preview">
-                                            <input type="text" class="form-control image-preview-filename" disabled="disabled"></input>
-
-                                            <!-- don't give a name === doesn't send on POST/GET -->
-
-                                            <span class="input-group-btn">
-                                                <!-- image-preview-clear button -->
-
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-default image-preview-clear"
-                                                    style="display:none;"
-                                                >
-                                                    <span class="glyphicon glyphicon-remove"></span> Clear
-                                            </button>
-
-                                            <!-- image-preview-input -->
-
-                                            <div class="btn btn-default image-preview-input">
-                                                <span class="glyphicon glyphicon-folder-open"></span>
-
-                                                <span class="image-preview-input-title">Browse</span>
-
-                                                <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"></input>
-
-                                                <!-- rename it -->
-                                            </div>
-                                            </span>
-                                        </div>
-
-                                        <!-- /input-group image-preview [TO HERE] -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- / end col -->
-                        </div>
-                    </section>
-
-                    <section class="text-right">
-                        <button type="button" class="btn btn-primary btn-sm next" id="last">Продовжити</button>
-                    </section>
+                <div class="form-row text-right">
+                    <input id="comment-anonymous" ng-change="cmntCtrl.anonymousChanged()" ng-model="cmntCtrl.comment.anonymous" type="checkbox">
+                    <label for="comment-anonymous">Anonymous</label>
                 </div>
 
-                <div class="tab-pane fade" id="validate">
-                    <section>
-                        <div class="alerts--child alerts--success">
-                            <div class="alerts__icon">
-                                <i class="fa fa-check"></i>
-                            </div>
-
-                            <div class="alerts__text">
-                                <span class="alerts__type">Success:</span> Ви додали новину!
-                            </div>
-                        </div>
-                    </section>
+                <div class="form-row">
+                    <input type="submit" ng-click="shareMyData(myValue,myValue1,myValue2)" value="Add Comment">
                 </div>
-            </div>
+            </form>
         </div>
-    </div>
 
+    </body>
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+    <script src="js/test.js"></script>
     <script src="js/jquery1-11-2.min.js"></script>
     <script src='js/jquery.min.js'></script>
     <script src='js/scroolreveal.js'></script>
