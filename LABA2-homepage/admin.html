@@ -2,29 +2,27 @@
 <html manifest="manifest.cache">
 
 <head>
-    <meta charset="UTF-8"></meta>
-
+    <meta charset="UTF-8">
+    </meta>
     <title>Новини</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
     <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='css/magnific-popup.css'>
-
-    <link rel="stylesheet" href="css/admin.css"></link>
+    <link rel="stylesheet" href="css/admin.css">
+    </link>
 </head>
 
 <body>
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,100,300" rel="stylesheet" type="text/css"></link>
-
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,700" rel="stylesheet" type="text/css"></link>
-
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css"></link>
-
-    <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700" rel="stylesheet" type="text/css"></link>
-
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,100,300" rel="stylesheet" type="text/css">
+    </link>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,700" rel="stylesheet" type="text/css">
+    </link>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    </link>
+    <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700" rel="stylesheet" type="text/css">
+    </link>
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -33,53 +31,42 @@
                         <img class="FB-logo" src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ee-lgflag.gif" height="50px" width="50px">
                     </div>
                 </a>
-
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
             </div>
-
             <div class="collapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/index.html">Головна</a>
                     </li>
-
                     <li>
                         <a href="#">Новини</a>
                     </li>
-
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Студентам
-
-                            <b class="caret"></b>
-                        </a>
-
+                     Студентам
+                     <b class="caret"></b>
+                     </a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="/curriculum.html">Програма</a>
                             </li>
-
                             <li>
                                 <a href="#">Лабораторні</a>
                             </li>
-
                             <li>
                                 <a href="#">Література</a>
                             </li>
                         </ul>
-
                         <li>
                             <a href="/feedback.html">Відгуки</a>
                         </li>
-
                         <li>
                             <a href="/contact.html">Контакти</a>
                         </li>
-
                         <li>
                             <a href="#">Admin</a>
                         </li>
@@ -88,46 +75,43 @@
             </div>
         </div>
     </nav>
-
     <h1 class="section-header">Add news</h1>
 
     <body ng-app="plunker">
-
-
-
-        <div class="comments-app" ng-app="plunker" ng-controller="MainCtrl">
-
-            <!-- From -->
-
-            <!-- Comment Avatar -->
-            <div class="comment-avatar">
-                <img src="http://lorempixel.com/200/200/people">
+        <div class="comment-form">
+            <div class="comments-app" ng-app="plunker" ng-controller="MainCtrl">
+                <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
+                    <div class="form-row">
+                        <input class="input" ng-model="myValue" placeholder="Підзаголовок" ng-required="!cmntCtrl.comment.anonymous" required>
+                    </div>
+                    <div class="form-row">
+                        <input class="input" ng-model="myValue1" placeholder="Заголовок" type="text" required>
+                        </textarea>
+                    </div>
+                    <div class="form-row">
+                        <textarea class="input" ng-model="myValue2" placeholder="Текст" type="text" required></textarea>
+                    </div>
+                    <div class="input-group image-preview">
+                        <input type="text" class="form-control image-preview-filename" disabled="disabled">
+                        <span class="input-group-btn">
+                        <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                        <span class="glyphicon glyphicon-remove"></span> Clear
+                        </button>
+                        <div class="btn btn-default image-preview-input">
+                            <span class="glyphicon glyphicon-folder-open"></span>
+                            <span class="image-preview-input-title">Browse</span>
+                            <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" />
+                        </div>
+                        </span>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" ng-click="shareMyData(myValue,myValue1,myValue2)" value="Add News">
+                    </div>
+                </form>
             </div>
-
-            <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
-                <div class="form-row">
-                    <input ng-model="myValue" />
-                </div>
-
-
-                <textarea ng-model="myValue2"></textarea>
-
-                <div class="form-row">
-                    <input ng-model="myValue2" />
-                </div>
-
-                <div class="form-row text-right">
-                    <input id="comment-anonymous" ng-change="cmntCtrl.anonymousChanged()" ng-model="cmntCtrl.comment.anonymous" type="checkbox">
-                    <label for="comment-anonymous">Anonymous</label>
-                </div>
-
-                <div class="form-row">
-                    <input type="submit" ng-click="shareMyData(myValue,myValue1,myValue2)" value="Add Comment">
-                </div>
-            </form>
         </div>
-
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
     <script src="js/test.js"></script>
@@ -138,12 +122,11 @@
     <script src='js/magnific-popup.js'></script>
     <script src="js/moment.js"></script>
     <script src="js/admin.js"></script>
-
+    <script src="js/image.js"></script>
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4"></div>
-
                 <div class="col-md-4">
                     <div class="footer-box">
                         <ul class="social">
@@ -152,38 +135,32 @@
                                     <i class="fa fa-twitter"></i>
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#">
                                     <i class="fa fa-instagram"></i>
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#">
                                     <i class="fa fa-google-plus"></i>
                                 </a>
                             </li>
-
                             <li>
                                 <a href="#">
                                     <i class="fa fa-youtube"></i>
                                 </a>
                             </li>
                         </ul>
-
                         <div class="copyright">
                             Copyright © 2017. All rights reserved.
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4"></div>
             </div>
         </div>
