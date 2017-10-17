@@ -80,9 +80,9 @@
     <body ng-app="plunker">
         <div class="comment-form">
             <div class="comments-app" ng-app="plunker" ng-controller="MainCtrl">
-                <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
+                <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" validate>
                     <div class="form-row">
-                        <input class="input" ng-model="myValue" placeholder="Підзаголовок" ng-required="!cmntCtrl.comment.anonymous" required>
+                        <input class="input" id="qwe1" ng-model="myValue" placeholder="Підзаголовок" ng-required="!cmntCtrl.comment.anonymous" required>
                     </div>
                     <div class="form-row">
                         <input class="input" ng-model="myValue1" placeholder="Заголовок" type="text" required>
@@ -111,6 +111,7 @@
             </div>
         </div>
     </body>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>

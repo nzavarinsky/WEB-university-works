@@ -58,7 +58,7 @@ app.service('srvShareData', function($window) {
         if (mydata) {
             mydata = JSON.parse(mydata);
         }
-        return mydata || [1];
+        return mydata;
     };
 
     return {
