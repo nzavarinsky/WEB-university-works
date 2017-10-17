@@ -67,13 +67,13 @@
                 <img src="http://lorempixel.com/200/200/people">
             </div>
 
-            <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
+            <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" validate>
                 <div class="form-row">
                     <textarea class="input" ng-model="cmntCtrl.comment.text" placeholder="Add comment..." required></textarea>
                 </div>
 
                 <div class="form-row">
-                    <input class="input" ng-class="{ disabled: cmntCtrl.comment.anonymous }" ng-disabled="cmntCtrl.comment.anonymous" ng-model="cmntCtrl.comment.author" ng-required="!cmntCtrl.comment.anonymous" placeholder="Email" type="email">
+                    <input class="input" ng-class="{ disabled: cmntCtrl.comment.anonymous }" ng-disabled="cmntCtrl.comment.anonymous" ng-model="cmntCtrl.comment.author" ng-required="!cmntCtrl.comment.anonymous" placeholder="Email" type="text">
                 </div>
 
                 <div class="form-row text-right">
