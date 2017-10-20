@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="manifest.cache">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -60,95 +60,101 @@
 
     <body ng-app="plunker">
         <div ng-controller="SecondCtrl">
-            <h1 class="section-header">News</h1>
-            <div class="container-fluid">
-                <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="2500">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                    <div class="col-md-9">
-                                        <p>{{ sharedData[0] }}</p>
-                                        <p>{{ sharedData[1] }}</p>
-                                        <p></p>
-                                        <p>{{ sharedData[2] }}.
-                                        </p>
+            <div class="container1">
+
+
+                <div class="latest-news-box">
+                    <!-- Row -->
+                    <div class="row nomargin">
+                        <div class="col-md-6 nopadding">
+                            <div class="item item-left">
+                                <div class="col-md-6 nopadding hidden-xs">
+                                    <img src="http://p5.storage.canalblog.com/51/18/1155406/99400222.jpg" alt="News Image">
+                                    <span class="img-overflow"></span>
+                                    <div class="arrow-left"></div>
+                                </div>
+
+                                <div class="col-md-6 nopadding">
+                                    <div class="content">
+
+                                        <h2>{{sharedData[0]}}</h2>
+                                        <p>{{sharedData[1]}}</p>
+                                        <p>{{sharedData[2]}}</p>
+                                        <a href="#" class="btn blue small">Read More</a>
+                                        <span class="comments">0 <i class="fa fa-comment-o" aria-hidden="true"></i></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                    <div class="col-md-9">
-                                        <p>{{ sharedData }}</p>
-                                        <p>{{ sharedData1 }}</p>
-                                        <p></p>
-                                        <p>{{ sharedData1 }}.
-                                        </p>
-                                        <p> {{ sharedData2 }} </p>
+
+                        <div class="col-md-6 nopadding">
+                            <div class="item item-left">
+                                <div class="col-md-6 nopadding hidden-xs">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQffqU3SOw3YOhMOo590WlAITXa9RhkPEiCe8bzel3-2dRGFR7Dpw" alt="News Image">
+                                    <span class="img-overflow"></span>
+                                    <div class="arrow-left"></div>
+                                </div>
+
+                                <div class="col-md-6 nopadding">
+                                    <div class="content">
+
+                                        <h2>{{sharedData[3]}}</h2>
+                                        <p>{{sharedData[4]}}</p>
+                                        <p>{{sharedData[5]}}</p>
+                                        <a href="#" class="btn blue small">Read More</a>
+                                        <span class="comments">3 <i class="fa fa-comment-o" aria-hidden="true"></i></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                    <div class="col-md-9">
-                                        <p>{{ sharedData }}</p>
-                                        <p>{{ sharedData1 }}</p>
-                                        <p></p>
-                                        <p>{{ sharedData1 }}.
-                                        </p>
-                                        <p> {{ sharedData2 }} </p>
+
+                        <div class="col-md-6 nopadding">
+                            <div class="item item-right">
+                                <div class="col-md-6 nopadding">
+                                    <div class="content">
+                                        <h2>{{sharedData[6]}}</h2>
+                                        <p>{{sharedData[7]}}</p>
+                                        <p>{{sharedData[8]}}</p>
+                                        <a href="#" class="btn blue small">Read More</a>
+                                        <span class="comments">11 <i class="fa fa-comment-o" aria-hidden="true"></i></span>
                                     </div>
+                                </div>
+
+                                <div class="col-md-6 nopadding hidden-xs">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQffqU3SOw3YOhMOo590WlAITXa9RhkPEiCe8bzel3-2dRGFR7Dpw" alt="News Image">
+                                    <span class="img-overflow"></span>
+                                    <div class="arrow-right"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-                                    <div class="col-md-9">
-                                        <p>{{ dataToShare2 }}</p>
-                                        <p>{{ sharedData[myValue1] }}</p>
-                                        <p></p>
-                                        <p>{{ sharedData1 }}.
-                                        </p>
-                                        <p> {{ sharedData2 }} </p>
+
+                        <div class="col-md-6 nopadding">
+                            <div class="item item-right">
+                                <div class="col-md-6 nopadding">
+                                    <div class="content">
+                                        <h2>{{sharedData[9]}}</h2>
+                                        <p>{{sharedData[10]}}</p>
+                                        <p>{{sharedData[11]}}</p>
+                                        <a href="#" class="btn blue small">Read More</a>
+                                        <span class="comments">0 <i class="fa fa-comment-o" aria-hidden="true"></i></span>
                                     </div>
                                 </div>
+
+                                <div class="col-md-6 nopadding hidden-xs">
+                                    <img src="http://p5.storage.canalblog.com/51/18/1155406/99400222.jpg" alt="News Image">
+                                    <span class="img-overflow"></span>
+                                    <div class="arrow-right"></div>
+                                </div>
                             </div>
+
                         </div>
-                    </div>
-                    <div class="controls">
-                        <ul class="nav">
-                            <li data-target="#custom_carousel" data-slide-to="0" class="active">
-                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData[0] }}</small></a>
-                            </li>
-                            <li data-target="#custom_carousel" data-slide-to="1">
-                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData }}</small></a>
-                            </li>
-                            <li data-target="#custom_carousel" data-slide-to="2">
-                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData }}</small></a>
-                            </li>
-                            <li data-target="#custom_carousel" data-slide-to="3">
-                                <a href="#"><img src="http://placehold.it/50x50"><small>{{ sharedData }}</small></a>
-                            </li>
-                        </ul>
+                        <!-- ./end Row -->
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
         </div>
-
+        </div>
     </body>
 
     <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
@@ -161,31 +167,8 @@
     <script src="js/index.js"></script>
     <script src="js/news.js"></script>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="footer-box">
-                        <ul class="social">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                        <div class="copyright">Copyright © 2017. All rights reserved.</div>
-                    </div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-    </footer>
+
+    <div class="footer">Copyright 2017 .</div>
 </body>
 
 </html>

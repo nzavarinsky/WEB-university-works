@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="manifest.cache">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
     </link>
     <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700" rel="stylesheet" type="text/css">
     </link>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -76,6 +76,7 @@
         </div>
     </nav>
     <h1 class="section-header">Add news</h1>
+    <h2>Hello {{name}}!</h2> Online Status : {{online}}
 
     <body ng-app="plunker">
         <div class="comment-form">
@@ -98,7 +99,7 @@
                         <span class="glyphicon glyphicon-remove"></span> Clear
                         </button>
                         <div class="btn btn-default image-preview-input">
-                            <span class="glyphicon glyphicon-folder-open"></span>
+                            <span class="fa"></span>
                             <span class="image-preview-input-title">Browse</span>
                             <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" />
                         </div>
@@ -113,7 +114,6 @@
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
     <script src="js/test.js"></script>
     <script src="js/jquery1-11-2.min.js"></script>
