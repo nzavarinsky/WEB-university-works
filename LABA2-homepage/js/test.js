@@ -100,4 +100,5 @@ app.service('srvShareData', function($window) {
         addData: addData,
         getData: getData
     };
+
 });
