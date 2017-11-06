@@ -43,7 +43,7 @@
                         <a href="/index.html">Головна</a>
                     </li>
                     <li>
-                        <a href="#">Новини</a>
+                        <a href="/news.html">Новини</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -76,27 +76,26 @@
         </div>
     </nav>
     <h1 class="section-header">Add news</h1>
-    <h2>Hello {{name}}!</h2> Online Status : {{online}}
 
-    <body ng-app="plunker">
+    <body>
         <div class="comment-form">
-            <div class="comments-app" ng-app="plunker" ng-controller="MainCtrl">
-                <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" validate>
+            <div class="comments-app" data-ng-app="indexDBSample" data-ng-controller="TodoController as vm">
+                <form class="form" name="form" validate>
                     <div class="form-row">
-                        <input class="input" id="qwe1" ng-model="myValue" placeholder="Підзаголовок" ng-required="!cmntCtrl.comment.anonymous" required>
+                        <input class="input" data-ng-model="vm.headingText" name="todo" placeholder="Заголовок" required="required" />
                     </div>
                     <div class="form-row">
-                        <input class="input" ng-model="myValue1" placeholder="Заголовок" type="text" required>
+                        <input class="input" data-ng-model="vm.subheadingText" name="todo1" placeholder="Підзаголовок" required="required" />
                         </textarea>
                     </div>
                     <div class="form-row">
-                        <textarea class="input" ng-model="myValue2" placeholder="Текст" type="text" required></textarea>
+                        <textarea class="input" data-ng-model="vm.text" name="todo2" placeholder="Текст новини" required="required"></textarea>
                     </div>
                     <div class="input-group image-preview">
                         <input type="text" class="form-control image-preview-filename" disabled="disabled">
                         <span class="input-group-btn">
-                        <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                        <span class="glyphicon glyphicon-remove"></span> Clear
+                            <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                            <span class="glyphicon glyphicon-remove"></span> Clear
                         </button>
                         <div class="btn btn-default image-preview-input">
                             <span class="fa"></span>
@@ -106,24 +105,18 @@
                         </span>
                     </div>
                     <div class="form-row">
-                        <input type="submit" ng-click="shareMyData(myValue,myValue1,myValue2)" value="Add News">
+                        <input type="submit" value="Add" data-ng-click="vm.addTodo()" />
                     </div>
                 </form>
             </div>
         </div>
+
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
-    <script src="js/test.js"></script>
-    <script src="js/jquery1-11-2.min.js"></script>
     <script src='js/jquery.min.js'></script>
-    <script src='js/scroolreveal.js'></script>
-    <script src='js/bootstrap.min.js'></script>
-    <script src='js/magnific-popup.js'></script>
-    <script src="js/moment.js"></script>
-    <script src="js/admin.js"></script>
-    <script src="js/image.js"></script>
+    <script src="js/indexeddb.js"></script>
     <footer class="footer">
         <div class="container">
             <div class="row">

@@ -100,7 +100,7 @@ body {
   ****************************/
 
 .footer {
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
@@ -123,119 +123,104 @@ body {
 
 /* Latest News */
 
-.latest-news-box {
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    overflow: hidden;
+.news {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.item .content {
-    padding: 15px;
-    height: 250px;
+.news article {
+    float: left;
+    display: block;
+    margin-right: 3.63636%;
+    width: 30.90909%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
 }
 
-.item {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+.news article:last-child {
+    margin-right: 0;
 }
 
-.item h2 {
-    color: #4c4c4c;
-    font-size: 18px;
+.news article:nth-child(3n) {
+    margin-right: 0;
 }
 
-.item p {
-    font-size: 12px;
-    line-height: 22px;
-    margin: 10px 0;
+.news article:nth-child(3n+1) {
+    clear: left;
 }
 
-.item p.date {
-    font-size: 11px;
-    font-weight: 600;
-    color: #868686;
-    opacity: .8;
-    margin: 0;
+.news .img {
+    height: 150px;
+    background-color: #cccccc;
+    margin-bottom: 10px;
 }
 
-.item .comments {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+.news h4 {
+    font-size: 24px;
+    padding-bottom: 5px;
+    font-weight: normal;
 }
 
-.latest-news-box .item .btn {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-}
-
-.latest-news-box .item img {
-    width: 100%;
-    height: 250px;
-}
-
-.img-overflow {
-    background: #32b8da;
-    background: -webkit-linear-gradient(left, #32b8da 0%, #5cceeb 42%, #32dac3 85%);
-    background: -o-linear-gradient(left, #32b8da 0%, #5cceeb 42%, #32dac3 85%);
-    background: linear-gradient(to right, #32b8da 0%, #5cceeb 42%, #32dac3 85%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#32b8da', endColorstr='#32dac3', GradientType=1);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.item:hover .img-overflow {
-    opacity: .8;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-}
-
-.item .arrow-left {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid #fff;
-    position: absolute;
-    top: 15px;
-    right: 0;
-}
-
-.item .arrow-right {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #fff;
-    position: absolute;
-    top: 15px;
-    left: 0;
-}
-
-img {
-    max-width: 100%;
-}
-
-.nopadding {
-    padding: 0 !important;
-}
-
-.btn.blue,
-a.btn.blue {
-    background: #32b8da;
-    border-color: #32b8da;
+.news .read-more {
+    margin-top: auto;
+    -webkit-align-self: flex-start;
+    -moz-align-self: flex-start;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #666666;
+    background-color: #cccccc;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .container1 {
-    padding-top: 5%;
+    padding-top: 50px;
+}
+
+.col-lg-6 {
+    border-color: black;
+    border-width: 10px;
+    height: 100%;
+    padding-right: 100px;
 }

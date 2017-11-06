@@ -1,9 +1,11 @@
 var app = angular.module('indexDBSample', []);
 
 app.factory('indexedDBDataSvc', function($window, $q) {
+    var useLocalStorage = true;
     var indexedDB = $window.indexedDB;
     var db = null;
     var lastIndex = 0;
+
 
     var open = function() {
         var deferred = $q.defer();
@@ -32,7 +34,11 @@ app.factory('indexedDBDataSvc', function($window, $q) {
         };
 
         return deferred.promise;
+        if (useLocalStorage == true) {
+            request = indexedDB.close();
+        }
     };
+
 
     var getTodos = function() {
         var deferred = $q.defer();
@@ -94,7 +100,7 @@ app.factory('indexedDBDataSvc', function($window, $q) {
         return deferred.promise;
     };
 
-    var addTodo = function(todoText) {
+    var addTodo = function(headingText, subheadingText, text) {
         var deferred = $q.defer();
 
         if (db === null) {
@@ -105,7 +111,9 @@ app.factory('indexedDBDataSvc', function($window, $q) {
             lastIndex++;
             var request = store.put({
                 "id": lastIndex,
-                "text": todoText
+                "zagol": headingText,
+                "pidzagol": subheadingText,
+                "text": text
             });
 
             request.onsuccess = function(e) {
@@ -142,9 +150,13 @@ app.controller('TodoController', function($window, indexedDBDataSvc) {
     };
 
     vm.addTodo = function() {
-        indexedDBDataSvc.addTodo(vm.todoText).then(function() {
+        indexedDBDataSvc.addTodo(vm.headingText, vm.subheadingText, vm.text).then(function() {
             vm.refreshList();
-            vm.todoText = "";
+            vm.headingText = "";
+            vm.subheadingText = "";
+            vm.text = "";
+
+
         }, function(err) {
             $window.alert(err);
         });
@@ -163,6 +175,5 @@ app.controller('TodoController', function($window, indexedDBDataSvc) {
             vm.refreshList();
         });
     }
-
     init();
 });
