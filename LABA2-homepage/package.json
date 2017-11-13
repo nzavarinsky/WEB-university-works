@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.1",
+  "description": "RESTful api for my websit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "github.com/nzavarinsky/web-university-works"
+  },
+  "keywords": [
+    "no",
+    "keywords"
+  ],
+    "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Nazarii Zavarynskyi",
+  "license": "Unlicense",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  }
+}
+
