@@ -61,47 +61,13 @@
 
     <div data-ng-app="indexDBSample" data-ng-controller="TodoController as vm">
         <div class="container1" ng-repeat="todo in vm.todos">
-            <section class="news">
+            <section class="news" id="personDataTable">
                 <article>
-                    <div class="img"><img src=img/1.jpg alt="альтернативный текст" width="469.56px" height="150px"></div>
-                    <h4>{{vm.todos[0].zagol}}</h4>
-                    <h5>{{vm.todos[0].pidzagol}}</h5>
-                    <span>{{vm.todos[0].text}}</span>
-                    <a class="read-more" href="#">read more</a>
+                    <h4></h4>
+                    <h4></h4>
+                    <h4></h4>
                 </article>
-                <article>
-                    <div class="img"><img src=img/2.png alt="альтернативный текст" width="469.56px" height="150px"></div>
-                    <h4>{{vm.todos[1].zagol}}</h4>
-                    <p>{{vm.todos[1].pidzagol}}</p>
-                    <span>{{vm.todos[1].text}}</span><a class="read-more" href="#">read more</a>
-                </article>
-                <article>
-                    <div class="img"><img src=img/3.jpg alt="альтернативный текст" width="469.56px" height="150px"></div>
-                    <h4>{{vm.todos[2].zagol}}</h4>
-                    <p>{{vm.todos[2].text1}}</p>
-                    <span>{{vm.todos[2].text}}</span><a class="read-more" href="#">read more</a>
-                </article>
-                <article>
-                    <div class="img"><img src=img/1.jpg alt="альтернативный текст" width="469.56px" height="150px"></div>
-                    <h4>{{vm.todos[3].zagol}}</h4>
-                    <p>{{vm.todos[3].pidzagol}}</p>
-                    <span>{{vm.todos[3].text}}</span>
-                    <a class="read-more" href="#">read more</a>
-                </article>
-                <article>
-                    <div class="img"><img src=img/2.png alt="альтернативный текст" width="469.56px" height="150px"></div>
-                    <h4>{{vm.todos[4].zagol}}</h4>
-                    <p>{{vm.todos[4].pidzagol}}</p>
-                    <span>{{vm.todos[4].text}}</span>
-                    <a class="read-more" href="#">read more</a>
-                </article>
-                <article>
-                    <div class="img"><img src=img/3.jpg alt="альтернативный текст" width="469.56px" height="150px"></div>
-                    <h4>{{vm.todos[5].zagol}}</h4>
-                    <p>{{vm.todos[5].pidzagol}}</p>
-                    <span>{{vm.todos[5].text}}</span>
-                    <a class="read-more" href="#">read more</a>
-                </article>
+
             </section>
         </div>
         <!-- ./end Row -->
@@ -111,7 +77,7 @@
 <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
 <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
 <script src='js/jquery.min.js'></script>
-<script src="js/indexeddb.js"></script>
+<script src="js/listify-json.js"></script>
 <div class="footer">Copyright 2017 .</div>
 </body>
 
